@@ -8,13 +8,13 @@ import java.util.Date;
  */
 public class WorkDay {
     private String weekDay;
-    //private Date date;
+    private String date;
     private ArrayList<WorkBlock> blocks;
     private long hours;
 
-    public WorkDay(String weekDay) {
+    public WorkDay(String weekDay, String date) {
         this.weekDay = weekDay;
-        //this.date = date;
+        this.date = date;
         blocks = new ArrayList<WorkBlock>();
         hours = 0;
     }
@@ -28,11 +28,11 @@ public class WorkDay {
         return weekDay;
     }
 
-    /*
-    public Date getDate() {
+
+    public String getDate() {
         return date;
     }
-    */
+
 
     public ArrayList<WorkBlock> getBlocks() {
         return blocks;

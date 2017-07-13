@@ -13,7 +13,7 @@ public class WorkBlock {
     private Date timeOut;
     private double hours;
 
-    DateFormat format = new SimpleDateFormat("h:ma");
+    DateFormat format = new SimpleDateFormat("hh:mma");
 
     public WorkBlock(String timeIn, String timeOut, String hours) {
 
@@ -35,8 +35,6 @@ public class WorkBlock {
     }
 
     public WorkBlock(String timeIn) {
-
-        DateFormat format = new SimpleDateFormat("h:ma");
 
         try {
             this.timeIn = format.parse(timeIn);
