@@ -11,11 +11,11 @@ import java.util.Date;
 public class WorkBlock {
     private Date timeIn;
     private Date timeOut;
-    private long hours;
+    private double hours;
 
     DateFormat format = new SimpleDateFormat("h:ma");
 
-    public WorkBlock(String timeIn, String timeOut) {
+    public WorkBlock(String timeIn, String timeOut, String hours) {
 
         try {
             this.timeIn = format.parse(timeIn);
@@ -24,8 +24,13 @@ public class WorkBlock {
             e.printStackTrace();
         }
 
-        long diff = this.timeOut.getTime() - this.timeIn.getTime();
-        this.hours = diff / (60 * 60 * 1000);
+        String[] hoursSplit = hours.split(":");
+        double calcHours = Double.valueOf(hoursSplit[0]);
+        double calcMinutes = Double.valueOf(hoursSplit[1]);
+
+        calcHours += (calcMinutes/60);
+
+        this.hours = calcHours;
 
     }
 
@@ -51,7 +56,7 @@ public class WorkBlock {
         return timeOut;
     }
 
-    public long getHours() {
+    public double getHours() {
         return hours;
     }
 }
