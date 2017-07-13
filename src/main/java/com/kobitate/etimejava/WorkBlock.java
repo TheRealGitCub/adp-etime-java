@@ -17,6 +17,12 @@ public class WorkBlock {
 
     DateFormat format = new SimpleDateFormat("hh:mma");
 
+    /**
+     * Constructor, creates already-completed work block
+     * @param timeIn Time clocked in, in the format 1:00PM (provided by ADP)
+     * @param timeOut Time clocked out, in the format 1:00PM (provided by ADP)
+     * @param hours Total hours worked, in the format HH:MM (provided by ADP)
+     */
     public WorkBlock(String timeIn, String timeOut, String hours) {
 
         try {
@@ -36,6 +42,10 @@ public class WorkBlock {
 
     }
 
+    /**
+     * Constructor, creates in-progress work block
+     * @param timeIn Time clocked in, in the format 1:00PM (provided by ADP)
+     */
     public WorkBlock(String timeIn) {
 
         try {
@@ -48,14 +58,26 @@ public class WorkBlock {
         this.hours = 0;
     }
 
+    /**
+     * Get Time clocked in
+     * @return time clocked in as Date object
+     */
     public Date getTimeIn() {
         return timeIn;
     }
 
+    /**
+     * Get Time clocked out
+     * @return time clocked out as Date object
+     */
     public Date getTimeOut() {
         return timeOut;
     }
 
+    /**
+     * Get total hours worked
+     * @return Hours worked as a double, calculated by ADP
+     */
     public double getHours() {
         return hours;
     }
