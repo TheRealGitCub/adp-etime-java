@@ -6,8 +6,12 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Created by christopher-tate on 7/13/17.
+ * Created by TheRealGitCub on 7/11/17.
  */
+
+
+import java.util.HashMap;
+
 public class WorkWeek {
     private HashMap<String, WorkDay> week;
     private String[] days = { "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" };

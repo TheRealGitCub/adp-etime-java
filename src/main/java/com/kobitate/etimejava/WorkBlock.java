@@ -1,13 +1,15 @@
 package com.kobitate.etimejava;
 
+/**
+ * Created by TheRealGitCub on 7/11/17.
+ */
+
+
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- * Created by kobi on 7/11/17.
- */
 public class WorkBlock {
     private Date timeIn;
     private Date timeOut;

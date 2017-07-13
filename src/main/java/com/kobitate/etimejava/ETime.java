@@ -1,8 +1,9 @@
 package com.kobitate.etimejava;
 
 /**
- * Created by kobi on 7/11/17.
+ * Created by TheRealGitCub on 7/11/17.
  */
+
 import com.sun.org.apache.xml.internal.security.utils.Base64;
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;

@@ -1,11 +1,13 @@
 package com.kobitate.etimejava;
 
+/**
+ * Created by TheRealGitCub on 7/11/17.
+ */
+
+
 import java.util.ArrayList;
 import java.util.Date;
 
-/**
- * Created by kobi on 7/11/17.
- */
 public class WorkDay {
     private String weekDay;
     private String date;
