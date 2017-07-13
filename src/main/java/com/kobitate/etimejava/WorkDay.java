@@ -12,7 +12,7 @@ public class WorkDay {
     private String weekDay;
     private String date;
     private ArrayList<WorkBlock> blocks;
-    private long hours;
+    private double hours;
 
     public WorkDay(String weekDay, String date) {
         this.weekDay = weekDay;
@@ -40,7 +40,7 @@ public class WorkDay {
         return blocks;
     }
 
-    public long getHours() {
+    public double getHours() {
         return hours;
     }
 }
