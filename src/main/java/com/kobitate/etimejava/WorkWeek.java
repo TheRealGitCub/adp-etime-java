@@ -1,10 +1,5 @@
 package com.kobitate.etimejava;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
-
 /**
  * Created by TheRealGitCub on 7/11/17.
  */
