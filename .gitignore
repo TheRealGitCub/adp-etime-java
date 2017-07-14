@@ -1,3 +1,5 @@
 .idea/*
 src/main/java/com/kobitate/etimejava/ETimeTest.java
 target/*
+
+src/main/java/com/kobitate/etimejava/ETimeTestExample.java
