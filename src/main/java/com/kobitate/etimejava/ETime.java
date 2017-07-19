@@ -114,6 +114,35 @@ public class ETime {
 
     }
 
+    /*
+        # Approve Timecard notes
+
+        Sent Via POST:
+        * employeeId:156563
+        * employeeIds:156563
+        * timeframeId:1
+        * beginTimeframeDate:7/01/2017
+        * endTimeframeDate:7/14/2017
+        * personIds:156563
+        * beginningDate:7/01/2017
+        * endDate:7/14/2017
+        * com.kronos.wfc.OverrideWarnings:
+        * com.kronos.wfc.ACTION:approve
+        * com.kronos.wfc.CMD_DATA:
+        * com.kronos.wfc.CMD_PARAM:
+        * newCommentIDs:
+
+        Cookies:
+        * ADP_WELCOME_PREF1=html;
+        * BIGipServereet60=330241196.20480.0000;
+        * BIGipServer~ETime~usg=1616254124.49947.0000;
+        * BIGipServer~ETime~aate=1633031340.63515.0000;
+        * JSESSIONID=686BE0A8B2A8AC34B6B99EFC8EC70066.bv2eRETISINJB03;
+        * SMSESSION=[session cookie[
+
+
+     */
+
     private String tdClean(Elements td) {
         return td.first().text().trim().replaceAll("(^\\h*)|(\\h*$)",""); // via https://stackoverflow.com/a/28295733/1465353
     }
