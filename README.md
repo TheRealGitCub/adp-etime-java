@@ -2,12 +2,14 @@
 [**Documentation**](https://therealgitcub.github.io/adp-etime-java/)
 
 Connect to and interact with your ADP eTime Timecard from Java! Simulates user 
-entry through page sniffing techniques. Currently supports:
+entry through page sniffing techniques. 
+
+**Currently supports:**
 * Login with username and password
 * Clock In/Out
 * Get current timecard (as an Object)
 
-Features planned:
+**Features planned:**
 * Approve timecard
 * Get current timecard (as JSON)
 * Get past timecards
