@@ -4,6 +4,7 @@ package com.kobitate.etimejava;
  * Created by TheRealGitCub on 7/11/17.
  */
 
+import com.google.gson.Gson;
 import com.sun.org.apache.xml.internal.security.utils.Base64;
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
@@ -12,7 +13,6 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.Map;
 
 public class ETime {
@@ -112,6 +112,11 @@ public class ETime {
         return week;
 
 
+    }
+
+    public String timecardToJson(WorkWeek timecard) {
+        Gson gson = new Gson();
+        return gson.toJson(timecard);
     }
 
     /*
