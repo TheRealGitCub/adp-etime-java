@@ -1,6 +1,10 @@
 # ADP eTime API for Java
 [**Documentation**](https://therealgitcub.github.io/adp-etime-java/)
 
+> **No Longer Under Development** - My employer has switched over to PeopleSoft, and ADP eTime API 
+is no longer being developed. Feel free to fork it and run with it as you please, that's the beauty
+of FOSS!
+
 Connect to and interact with your ADP eTime Timecard from Java! Simulates user 
 entry through page scraping techniques. 
 
